@@ -1,9 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route, Switch} from react-router-dom;
+import Login from './Login';
 import topimg from './images/yani.jpg';
 
 function App() {
+  ReactDOM.render(
+    <Router>
+      <Layout>
+        <Route exact path="/" component={Featured}></Route>
+        <Route path="/archives" component={Archives}></Route>
+        <Route path="/settings" component={Settings}></Route>
+      </Layout>
+    </Router>,
+  app);
   return (
     <div className="top-page">
       <body>
@@ -15,10 +24,10 @@ function App() {
             </div>
 
             <div className="header-right">
-             <a href="#">ヤニリスト</a>
-             <a href="#">ホーム</a>
+             <a href="./App">ホーム</a>
              <a href="#">新規登録</a>
-             <a href="#">ログイン</a>
+             <a href="{Login}">ログイン</a>
+             <a href="#">ヤニリスト</a>
             </div>
 
           </div>
