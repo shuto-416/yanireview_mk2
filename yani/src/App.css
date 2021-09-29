@@ -1,0 +1,130 @@
+*{ 
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+a{
+  text-decoration: none; /* ボタンの下線消去 */
+}
+
+/*===================
+      header
+===================*/
+header{
+  width: 100%; /* 幅100%に表示 */
+  height: 65px; /* 高さ*/
+  background-color: rgba(2, 2, 32, 0.7); /*rgb&透過度*/
+}
+.header-container{
+  padding: 0 0; /* ボーダー内側余白:上+下 右+左 */
+  margin: 0 auto; /* 中央寄せ */
+}
+.header-left{
+    float: left; /* 左寄せ */
+}
+
+.header-right{
+    float: right; /* 右寄せ */
+    margin-right: 25px;
+}
+.header-right a{
+  float: left;
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  transition: all 0.5s; /*色が変わるまで0.5sの遅延*/
+}
+.header-right a:hover{ /*aにカーソルが乗っている場合*/
+  background-color: rgba(255,255,255,0.3);
+}
+
+/*==================
+      body
+==================*/
+.top{
+    padding: 30px 0 100px 0; /* 上,右,下,左 */
+    margin: 0 auto;
+    width: 100%;
+    background-image: url(./images/yani.jpg); /* 背景画像 */
+    background-size: cover; /* 背景画全画面表示 */
+    color: white; /* 字の色 */
+    text-align: center; /* テキストを中央揃え */
+}
+
+.top h1{
+    opacity: 0.7; /* 透過度 */
+    font-size: 70px; /* 字のサイズ */
+    letter-spacing: 5px; /* 字幅 */
+}
+
+.top h1 span{
+  font-size: 120px;
+}
+
+.top p{
+    opacity: 0.7;
+    font-size: 30px;
+    margin-bottom: 40px; /* ボーダーの外側余白 */
+}
+
+.middle{
+  color: black;
+}
+.middle-heading{
+  margin: 0 auto;
+  font-size: 40px;
+  text-align: center;
+}
+.self-picture{
+  padding: 20px 0px 30px 0px;
+  float: left;
+  margin-left: 200px;
+}
+.self-introduce{
+  font-size: 25px;
+  text-align: left;
+  float: right;
+  margin: 20px 100px 0 50px;
+  padding: 20px 50px 20px 50px;
+  border: 3px solid rgba(47,79,79, 0.5); /* 枠線 */
+}
+.self-introduce span{
+  padding-left: 26%;
+}
+
+.under-container{
+  width: 50%;
+  margin: 700px 25% 100px 25%;
+  text-align: center;
+  border: 4px solid rgba(25, 112, 25, 0.8);
+  padding: 20px 30px 50px 30px;
+}
+.under-heading{
+  margin-bottom: 50px
+}
+.btn-review{
+padding: 12px 60px;
+color: white;
+background-color: rgba(34,139,34,0.8);
+border-radius: 4px;
+cursor: pointer;
+box-shadow: 0 7px #1a7940; /* ボタンの下に指定色の影 */
+text-align: center;
+}
+
+.btn-review:active{ /* ボタンが押された時のaction */
+  position: relative;
+  top: 7px; /* 上部を7px下げる */
+  box-shadow: none; /* ボタンの影を無くす */
+}
+
+.footer-container{
+  width: 100%;
+  color: white;
+  background-color:rgba(2, 2, 32, 0.7);
+  float: left;
+  font-size: 16px;
+}
