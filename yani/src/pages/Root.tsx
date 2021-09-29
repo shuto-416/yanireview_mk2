@@ -6,14 +6,12 @@ function Root() {
       <body>
 
         <div className="top">
-          <div className="top-container">
             <h1><span>"LOVE"</span></h1>
             <h1>WHAT YOU SMOKE</h1>
             <h1><span>"SMOKE"</span></h1>
             <h1>WHAT YOU LOVE</h1>
             <p>"壁は黄色く、肺は黒く"</p>
             <p>このサイトを利用するための格言です。</p>
-          </div>
         </div>
 
         <div className="middle">
