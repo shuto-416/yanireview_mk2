@@ -14,15 +14,23 @@ a{
 ===================*/
 header{
   width: 100%; /* 幅100%に表示 */
-  height: 65px; /* 高さ*/
+  height: 60px; /* 高さ*/
   background-color: rgba(2, 2, 32, 0.7); /*rgb&透過度*/
+  position: fixed;
 }
 .header-container{
   padding: 0 0; /* ボーダー内側余白:上+下 右+左 */
   margin: 0 auto; /* 中央寄せ */
 }
 .header-left{
-    float: left; /* 左寄せ */
+  float: left; /* 左寄せ */
+  line-height: 10px;
+  color: white;
+  padding: 0 20px;
+}
+.header-left a{
+  color: white;
+  
 }
 
 .header-right{
@@ -31,8 +39,8 @@ header{
 }
 .header-right a{
   float: left;
-  line-height: 65px;
   padding: 0 25px;
+  line-height: 60px;
   color: white;
   display: block;
   transition: all 0.5s; /*色が変わるまで0.5sの遅延*/
@@ -45,7 +53,7 @@ header{
       body
 ==================*/
 .top{
-    padding: 30px 0 100px 0; /* 上,右,下,左 */
+    padding: 50px 0 100px 0; /* 上,右,下,左 */
     margin: 0 auto;
     width: 100%;
     background-image: url(../images/yani.jpg); /* 背景画像 */

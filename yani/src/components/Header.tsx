@@ -6,7 +6,7 @@ const Header = () => {
             <div className="header-container">
 
                 <div className="header-left">
-                    {/* <img className="logo" src="#" /> */}
+                    <h1><a href="/">Yani-review</a></h1>
                 </div>
 
                 <div className="header-right">

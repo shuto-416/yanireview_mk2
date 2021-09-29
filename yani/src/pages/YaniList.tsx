@@ -1,3 +1,4 @@
+import 'YaniList.css'
 
 const YaniList = () => {
 
