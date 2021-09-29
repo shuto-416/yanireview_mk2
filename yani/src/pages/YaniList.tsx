@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import ReactMarkdown from "react-markdown"
+import CircularProgress from '@mui/material/CircularProgress'
 import remarkGfm from 'remark-gfm'
 import './YaniList.scss'
 
@@ -24,11 +25,16 @@ function YaniList() {
     useEffect(() => {
         setTimeout(() => { // 指定時間(ms)後に実行
             loadMD(setMarkdown, setIsLoading)
-        }, 1000);
+        }, 1500);
     }, [])
 
     if(isLoading) {
-        return (<div className="mdWrap"> loading now </div>)
+        return (
+            <div className="loading">
+                <CircularProgress disableShrink />
+                <h2>loading now...</h2>
+            </div>
+        )
     }
 
     return (

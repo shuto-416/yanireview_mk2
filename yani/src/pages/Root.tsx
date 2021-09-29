@@ -10,8 +10,7 @@ function Root() {
             <h1>WHAT YOU SMOKE</h1>
             <h1><span>"SMOKE"</span></h1>
             <h1>WHAT YOU LOVE</h1>
-            <p>"壁は黄色く、肺は黒く"</p>
-            <p>このサイトを利用するための格言です。</p>
+            <p>"Smoking under the age of 20 is prohibited by law. Smoking also increases your risk of developing a variety of cancers, including lung cancer."</p>
         </div>
 
         <div className="middle">

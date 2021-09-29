@@ -1,7 +1,13 @@
-# YaniList
+# **ヤニリスト**
 
-yaniyaniyummy
+**わてらやに同好会ですわ**
 
-## fsdfsf
+## 奥田龍馬さんのおすすめ
 
-- ass
+- `メビウス`
+
+- `seven star`
+
+- `american spirit`
+
+- `high-light`

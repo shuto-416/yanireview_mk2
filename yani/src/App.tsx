@@ -7,11 +7,6 @@ import YaniReview from './pages/YaniReview'
 
 function App() {
 
-  const markdown = `*YaniList* 
-    yaniyaniyummy
-    *Lists
-    *[]sevensatr`
-
   return (
 
     <div>

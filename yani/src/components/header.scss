@@ -1,0 +1,47 @@
+.centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+/*===================
+      header
+===================*/
+header {
+  width: 100%; /* 幅100%に表示 */
+  height: 60px; /* 高さ*/
+  background-color: rgba(2, 2, 32, 0.7); /*rgb&透過度*/
+  position: fixed;
+  backdrop-filter: blur(4px);
+}
+.header-container {
+  padding: 0 0; /* ボーダー内側余白:上+下 右+左 */
+  margin: 0 auto; /* 中央寄せ */
+}
+.header-left {
+  float: left; /* 左寄せ */
+  line-height: 10px;
+  color: white;
+  padding: 0 20px;
+}
+.header-left a {
+  color: white;
+}
+
+.header-right {
+  float: right; /* 右寄せ */
+  margin-right: 25px;
+}
+.header-right a {
+  float: left;
+  padding: 0 25px;
+  line-height: 60px;
+  color: white;
+  display: block;
+  transition: all 0.5s; /*色が変わるまで0.5sの遅延*/
+}
+.header-right a:hover {
+  /*aにカーソルが乗っている場合*/
+  background-color: rgba(255, 255, 255, 0.3);
+}

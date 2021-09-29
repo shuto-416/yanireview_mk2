@@ -9,53 +9,11 @@ a{
   text-decoration: none; /* ボタンの下線消去 */
 }
 
-/*===================
-      header
-===================*/
-header{
-  width: 100%; /* 幅100%に表示 */
-  height: 60px; /* 高さ*/
-  background-color: rgba(2, 2, 32, 0.7); /*rgb&透過度*/
-  position: fixed;
-  backdrop-filter: blur(4px);
-}
-.header-container{
-  padding: 0 0; /* ボーダー内側余白:上+下 右+左 */
-  margin: 0 auto; /* 中央寄せ */
-}
-.header-left{
-  float: left; /* 左寄せ */
-  line-height: 10px;
-  color: white;
-  padding: 0 20px;
-}
-.header-left a{
-  color: white;
-  
-}
-
-.header-right{
-    float: right; /* 右寄せ */
-    margin-right: 25px;
-}
-.header-right a{
-  float: left;
-  padding: 0 25px;
-  line-height: 60px;
-  color: white;
-  display: block;
-  transition: all 0.5s; /*色が変わるまで0.5sの遅延*/
-}
-.header-right a:hover{ /*aにカーソルが乗っている場合*/
-  background-color: rgba(255,255,255,0.3);
-}
-
 /*==================
       body
 ==================*/
 .top{
     padding: 50px 0 100px 0; /* 上,右,下,左 */
-    margin: 0 auto;
     width: 100%;
     background-image: url(../images/yani.jpg); /* 背景画像 */
     background-size: cover; /* 背景画全画面表示 */
@@ -74,7 +32,9 @@ header{
 
 .top p{
     font-size: 30px;
-    margin-bottom: 40px; /* ボーダーの外側余白 */
+    /* margin-bottom: 40px; ボーダーの外側余白 */
+    margin: 0px 200px 30px 200px;
+    letter-spacing: 4px;
 }
 
 .middle{
