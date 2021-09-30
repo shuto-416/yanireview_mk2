@@ -1,9 +1,15 @@
+.review-body {
+    padding: 100px 0;
+
+    >h5 {
+        padding: 0 30%;
+    }
+}
 .MuiCard-root {
     width: 100%;
-    padding: 100px 20px 30px 20px;
-    margin: 0px 20px;
+    padding: 20px 20px 30px 20px;
 }
 
 .MuiCardMedia-img {
-    padding: 10px 10px;
+    padding: 0px 0px;
 }

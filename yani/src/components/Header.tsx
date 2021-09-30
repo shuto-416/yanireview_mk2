@@ -12,8 +12,8 @@ const Header = () => {
 
                 <div className="header-right">
                     {/* <a href="/">ホーム</a> */}
-                    <a href="/review">ヤニレビュー</a>
-                    <a href="/list">ヤニリスト</a>
+                    <a href="/review">Review</a>
+                    <a href="/list">YaniList</a>
                 </div>
 
             </div>
