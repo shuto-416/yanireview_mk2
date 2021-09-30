@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Root from "./pages/Root"
 import YaniList from './pages/YaniList'
 import YaniReview from './pages/YaniReview'
+import ReviewEdit from './pages/ReviewComponents/ReviewEdit'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/' component={Root} />
           <Route exact path='/list' component={YaniList} />
           <Route exact path='/review' component={YaniReview} />
+          <Route exact path='/review-edit' component={ReviewEdit} />
         </div>
       </Router>
 

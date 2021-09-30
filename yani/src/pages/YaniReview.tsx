@@ -1,5 +1,4 @@
 import './YaniReview.scss'
-import Typography from '@mui/material/Typography';
 import ReviewHead from './ReviewComponents/ReviewHead'
 import ReviewCards from './ReviewComponents/ReviewCards'
 
