@@ -28,7 +28,7 @@ function YaniList() {
         }, 1500);
     }, [])
 
-    if(isLoading) {
+    if (isLoading) {
         return (
             <Loading />
         )

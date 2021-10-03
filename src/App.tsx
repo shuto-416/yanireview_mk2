@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import ReactMarkdown from 'react-markdown'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Root from "./pages/Root"
@@ -7,12 +6,11 @@ import YaniList from './pages/YaniList'
 import YaniReview from './pages/YaniReview'
 import ReviewEdit from './pages/ReviewComponents/ReviewEdit'
 
-function App() {
+const App = (): JSX.Element => {
 
   return (
 
     <div>
-
       <Header />
 
       <Router>
@@ -24,7 +22,7 @@ function App() {
         </div>
       </Router>
 
-      <Footer/>
+      <Footer />
 
     </div>
   );

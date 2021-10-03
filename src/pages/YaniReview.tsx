@@ -1,10 +1,10 @@
-import {useEffect, useState} from "react"
+import { useEffect, useState } from "react"
 
 import './YaniReview.scss'
 import ReviewHead from './ReviewComponents/ReviewHead'
 import ReviewCards from './ReviewComponents/ReviewCards'
 import Loading from "../components/Loading"
-import {client} from "../api/client"
+import { client } from "../api/client"
 
 export type ReviewType = {
     id: number,
@@ -29,13 +29,13 @@ const functions = {
                 img: obj.img.url,
                 rating: obj.rating
             } // 新しいobjを生成
-    
+
             return newObj
         })
     }
 }
 
-function YaniReview () {
+const YaniReview = (): JSX.Element => {
 
     // state
     const [reviews, setReview] = useState<Array<ReviewType>>([])
@@ -43,25 +43,25 @@ function YaniReview () {
     // useEffect
     useEffect(() => {
         functions.getReviews()
-        .then((data: any) => {
-            setReview(functions.filterData(data.contents)) //filterData(data.contents)
-        })
+            .then((data: any) => {
+                setReview(functions.filterData(data.contents))
+            })
     }, [])
 
     // JSX
     if (reviews.length === 0) {
         return (
             <div className="review-body">
-            <ReviewHead/>
-            <Loading />
-        </div>
+                <ReviewHead />
+                <Loading />
+            </div>
         )
     }
 
     return (
         <div className="review-body">
-            <ReviewHead/>
-            <ReviewCards reviews={reviews}/>
+            <ReviewHead />
+            <ReviewCards reviews={reviews} />
         </div>
     )
 }
