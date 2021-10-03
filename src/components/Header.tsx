@@ -1,7 +1,7 @@
 import "./header.scss"
 import SmokingRoomsIcon from '@mui/icons-material/SmokingRooms';
 
-const Header = () => {
+const Header = (): JSX.Element => {
 
     return (
         <header>
@@ -9,13 +9,11 @@ const Header = () => {
 
                 <div className="header-left centering">
                     <h1><a href="/">Yani-review</a></h1>
-                    <SmokingRoomsIcon fontSize="large"/>
+                    <SmokingRoomsIcon fontSize="large" />
                 </div>
 
                 <div className="header-right">
-                    {/* <a href="/">ホーム</a> */}
                     <a href="/review">Review</a>
-                    {/* <a href="/list">YaniList</a> */}
                 </div>
 
             </div>

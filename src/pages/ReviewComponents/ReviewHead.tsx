@@ -1,8 +1,8 @@
 import Typography from '@mui/material/Typography';
 import './ReviewHead.scss'
 
-function ReviewHead() {
-    return(
+const ReviewHead = (): JSX.Element => {
+    return (
         <div className="review-head">
             <Typography
                 component="h1"
@@ -10,7 +10,7 @@ function ReviewHead() {
                 align="center"
                 gutterBottom  //文字下余白
             >
-            Yani Review
+                Yani Review
             </Typography>
             <Typography
                 component="h5"

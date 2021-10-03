@@ -11,33 +11,29 @@ import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 
-const theme = {
-    spacing: (value: number) => value,
-}
-
-const ReviewEdit = () => {
+const ReviewEdit = (): JSX.Element => {
 
     // for DatePicker
     const [time, setValue] = useState<Date | null>(
         new Date(),
     );
-    
-    const handleChangeDate = (newValue: Date | null) => {
+
+    const handleChangeDate = (newValue: Date | null): void => {
         setValue(newValue);
     };
 
-    return(
+    return (
         <div className="edit-form">
             <Typography variant="h2" component="h2">Edit form</Typography>
             <Typography variant="h6" component="h6">If you are not administer, get the fuck out of here.</Typography>
             <Box sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    pt: 10,
-                    px: '30%',
-                }}
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                pt: 10,
+                px: '30%',
+            }}
             >
                 <TextField
                     id="standard-basic"
@@ -48,15 +44,15 @@ const ReviewEdit = () => {
                 />
             </Box>
             <Box sx={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    pt: 5,
-                    px: '10%',
-                }}
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'center',
+                pt: 5,
+                px: '10%',
+            }}
             >
-                <Stack direction="row" spacing={10} sx={{width: '50%'}}>
+                <Stack direction="row" spacing={10} sx={{ width: '50%' }}>
                     <TextField
                         id="standard-basic"
                         label="Editor"
@@ -76,13 +72,13 @@ const ReviewEdit = () => {
                 </Stack>
             </Box>
             <Box sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    pt: 5,
-                    px: '30%',
-                }}
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                pt: 5,
+                px: '30%',
+            }}
             >
                 <TextField
                     id="outlined-multiline-static"
@@ -94,7 +90,7 @@ const ReviewEdit = () => {
                 />
             </Box>
 
-            <Container 
+            <Container
                 sx={{
                     display: 'flex',
                     alignItems: 'center',
