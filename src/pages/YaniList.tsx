@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import ReactMarkdown from "react-markdown"
-import CircularProgress from '@mui/material/CircularProgress'
 import remarkGfm from 'remark-gfm'
+import Loading from "../components/Loading"
 import './YaniList.scss'
 
 const loadMD = (setMarkdown: Function, setIsLoading: Function): void => {
@@ -30,10 +30,7 @@ function YaniList() {
 
     if(isLoading) {
         return (
-            <div className="loading">
-                <CircularProgress disableShrink />
-                <h2>loading now...</h2>
-            </div>
+            <Loading />
         )
     }
 

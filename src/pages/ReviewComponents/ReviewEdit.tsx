@@ -15,14 +15,14 @@ const theme = {
     spacing: (value: number) => value,
 }
 
-function ReviewEdit() {
+const ReviewEdit = () => {
 
     // for DatePicker
     const [time, setValue] = useState<Date | null>(
-        new Date('1999-04-16T21:11:54'),
+        new Date(),
     );
     
-    const handleChange = (newValue: Date | null) => {
+    const handleChangeDate = (newValue: Date | null) => {
         setValue(newValue);
     };
 
@@ -67,9 +67,9 @@ function ReviewEdit() {
                     <LocalizationProvider dateAdapter={AdapterDateFns}>
                         <DesktopDatePicker
                             label="Posted date"
-                            inputFormat="MM/dd/yyyy"
+                            inputFormat="yyyy/MM/dd"
                             value={time}
-                            onChange={handleChange}
+                            onChange={handleChangeDate}
                             renderInput={(params) => <TextField {...params} />}
                         />
                     </LocalizationProvider>

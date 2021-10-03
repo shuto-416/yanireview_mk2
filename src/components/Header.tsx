@@ -15,7 +15,7 @@ const Header = () => {
                 <div className="header-right">
                     {/* <a href="/">ホーム</a> */}
                     <a href="/review">Review</a>
-                    <a href="/list">YaniList</a>
+                    {/* <a href="/list">YaniList</a> */}
                 </div>
 
             </div>
