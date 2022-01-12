@@ -37,7 +37,7 @@ function Root() {
           </div>
         </div>
 
-        <div className="under">
+        {/* <div className="under">
           <div className="under-container">
             <div className="under-heading">
               <h2>このサイトを見た非喫煙者の方へ</h2>
@@ -46,7 +46,7 @@ function Root() {
             </div>
             <a className="btn-review" href="/review">ヤニレビューへ</a>
           </div>
-        </div>
+        </div> */}
         
       </body>
     </div>
